@@ -4,7 +4,7 @@ import "./logo.css";
 
 const Logo = () => {
   return (
-    <div class="logo">
+    <div className="logo">
       <a href="/">
         {" "}
         <h2>SNEAKERS</h2>

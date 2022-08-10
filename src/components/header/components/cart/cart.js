@@ -11,9 +11,9 @@ const Cart = () => {
   };
 
   return (
-    <div class="cart">
+    <div className="cart">
       <img
-        class="img-cart"
+        className="img-cart"
         src={shoppingCart}
         alt="Shopping cart"
         onClick={handleCart}

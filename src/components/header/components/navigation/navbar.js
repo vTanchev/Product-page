@@ -14,7 +14,7 @@ const Navbar = () => {
     ,
   ];
   return (
-    <div class="nav">
+    <div className="nav">
       <Logo />
       <nav>
         {pathArray.map((link) => (

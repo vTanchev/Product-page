@@ -7,7 +7,7 @@ import Cart from "./components/cart/cart";
 
 const Header = () => {
   return (
-    <div class="header">
+    <div className="header">
       <Navbar />
       <Cart />
     </div>
