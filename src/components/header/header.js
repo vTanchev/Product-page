@@ -1,15 +1,14 @@
 import React from "react";
 
 import Navbar from "./components/navigation/navbar";
-import Logo from "./components/navigation/logo";
+import "./header.css";
+
 import Cart from "./components/cart/cart";
 
 const Header = () => {
   return (
-    <div>
-      HEADER HERE
+    <div class="header">
       <Navbar />
-      <Logo />
       <Cart />
     </div>
   );

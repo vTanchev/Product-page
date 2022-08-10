@@ -1,6 +1,8 @@
 import React from "react";
 
-import avatar from "./cart-images/image-avatar.png";
+import "./cart.css";
+
+import LoginPanel from "./loginPanel";
 import shoppingCart from "./cart-images/shopping-cart.png";
 
 const Cart = () => {
@@ -9,8 +11,9 @@ const Cart = () => {
   };
 
   return (
-    <div>
+    <div class="cart">
       <img
+        class="img-cart"
         src={shoppingCart}
         alt="Shopping cart"
         onClick={handleCart}
@@ -18,7 +21,7 @@ const Cart = () => {
         width={40}
         style={{ cursor: "pointer" }}
       />
-      <img src={avatar} alt="Avatar Logo" height={40} width={40} />
+      <LoginPanel />
     </div>
   );
 };
