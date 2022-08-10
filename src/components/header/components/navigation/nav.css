@@ -1,8 +1,12 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
 .nav {
   display: flex;
   flex-direction: row;
   align-content: space-between;
   align-items: center;
+  font-family: "Kumbh Sans";
+  font-size: 16px;
 }
 
 nav {

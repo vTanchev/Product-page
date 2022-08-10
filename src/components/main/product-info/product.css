@@ -1,0 +1,79 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+.product-info {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  margin-top: 160px;
+  right: 0;
+}
+
+.product-menu {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-type,
+.main-title,
+.text-description,
+.discount-price,
+.discount-percent {
+  font-size: 16px;
+  font-family: "Kumbh Sans";
+  margin-bottom: 20px;
+}
+
+.main-type {
+  color: hsl(26, 100%, 55%);
+}
+
+.discount {
+  display: flex;
+  flex-direction: row;
+}
+
+.discount-percent {
+  margin-left: 20px;
+}
+
+.real-price {
+  font-family: "Kumbh Sans";
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: "Kumbh Sans";
+  font-size: 16px;
+}
+
+.number-of-items {
+  text-align: center;
+
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 10px;
+  font-family: "Kumbh Sans";
+  font-size: 16px;
+}
+
+.add-to-cart {
+}

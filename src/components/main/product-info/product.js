@@ -11,23 +11,29 @@ import DecreaseNumberOfItems from "./components/items-to-buy/decreaseNumberOfIte
 import IncreaseNumberOfItems from "./components/items-to-buy/increaseNumberOfItems";
 import NumberOfItems from "./components/items-to-buy/numberOfItems";
 
+import "./product.css";
+
 const Product = () => {
   return (
     <div className="product-info">
-      <div className="product">
-        <Type />
-        <Title />
-        <Description />
-        <div className="product-prices">
-          <Price />
-          <DiscountPrice />
-          <ProductPricePercent />
-        </div>
-        <div className="add-to-cart">
-          <DecreaseNumberOfItems />
-          <IncreaseNumberOfItems />
-          <NumberOfItems />
-          <AddToCart />
+      <div className="product-menu">
+        <div className="product">
+          <Type />
+          <Title />
+          <Description />
+          <div className="product-prices">
+            <div className="discount">
+              <DiscountPrice />
+              <ProductPricePercent />
+            </div>
+            <Price />
+          </div>
+          <div className="add-to-cart">
+            <DecreaseNumberOfItems />
+            <NumberOfItems />
+            <IncreaseNumberOfItems />
+            <AddToCart />
+          </div>
         </div>
       </div>
     </div>
