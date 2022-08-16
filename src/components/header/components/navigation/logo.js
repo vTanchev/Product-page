@@ -6,7 +6,9 @@ import "./logo.css";
 const Logo = () => {
   return (
     <div className="logo">
-      <img src={logoImg} alt="logo-image" />
+      <a href="/">
+        <img src={logoImg} alt="logo-image" />
+      </a>
     </div>
   );
 };
