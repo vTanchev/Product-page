@@ -4,11 +4,16 @@ import "./cart.css";
 
 import LoginPanel from "./loginPanel";
 import shoppingCart from "./cart-images/shopping-cart.png";
+// import { faClipboardList } from "@fortawesome/free-solid-svg-icons";
 
-const Cart = () => {
-  const handleCart = (e) => {
-    console.log(e.target, "click here");
+const Cart = ({ itemsInCart, setItemsInCart, isPopupOpen, setIsPopupOpen }) => {
+  const handleCart = () => {
+    setIsPopupOpen(!isPopupOpen);
   };
+
+  const countNumberOfItems = itemsInCart
+    .map((item) => item.numberOfitems)
+    .reduce((acc, price) => acc + price, 0);
 
   return (
     <div className="cart">
@@ -21,6 +26,7 @@ const Cart = () => {
         width={40}
         style={{ cursor: "pointer" }}
       />
+      <p>{countNumberOfItems}</p>
       <LoginPanel />
     </div>
   );

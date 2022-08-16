@@ -2,6 +2,8 @@
   position: relative;
   top: 0;
   display: flex;
-  width: 100%;
-  padding: 20px 60px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 0 60px;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
 }

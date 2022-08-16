@@ -3,10 +3,10 @@ import React from "react";
 import Product from "./product-info/product";
 import "./main.css";
 
-const Main = () => {
+const Main = ({ itemsInCart, setItemsInCart }) => {
   return (
     <div className="main">
-      <Product />
+      <Product itemsInCart={itemsInCart} setItemsInCart={setItemsInCart} />
     </div>
   );
 };

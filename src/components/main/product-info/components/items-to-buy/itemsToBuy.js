@@ -6,8 +6,7 @@ import NumberOfItems from "./components/numberOfItems";
 
 import "./itemsToBuy.css";
 
-const ItemsToBuy = () => {
-  const [count, setCount] = useState(0);
+const ItemsToBuy = ({ count, setCount }) => {
   return (
     <div className="counter">
       <DecreaseNumberOfItems count={count} setCount={setCount} />

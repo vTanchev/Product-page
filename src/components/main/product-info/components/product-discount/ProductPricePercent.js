@@ -1,9 +1,9 @@
 import React from "react";
 
-const ProductPricePercent = () => {
+const ProductPricePercent = ({ discount }) => {
   return (
     <div className="product-price-discount">
-      <p className="discount-percent">50%</p>
+      <p className="discount-percent">{discount}%</p>
     </div>
   );
 };
