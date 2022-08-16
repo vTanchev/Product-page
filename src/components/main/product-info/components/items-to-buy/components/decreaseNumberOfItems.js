@@ -1,5 +1,7 @@
 import React from "react";
 
+import decrease from "../assets/icon-minus.svg";
+
 const DecreaseNumberOfItems = ({ count, setCount }) => {
   return (
     <div>
@@ -8,7 +10,7 @@ const DecreaseNumberOfItems = ({ count, setCount }) => {
         onClick={() => setCount(count - 1)}
         disabled={count <= 0}
       >
-        -
+        <img src={decrease} alt="minus" />
       </button>
     </div>
   );

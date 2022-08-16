@@ -1,4 +1,6 @@
 .counter {
   display: flex;
   flex-direction: row;
+  background-color: hsl(223, 64%, 98%);
+  align-items: center;
 }
