@@ -17,7 +17,6 @@
   flex-direction: column;
 }
 
-.main-type,
 .main-title,
 .text-description,
 .discount-price,
@@ -76,7 +75,7 @@
 }
 
 .main-type {
-  font-size: 14px;
+  font-size: 13px;
   padding: 5px;
 }
 
@@ -103,9 +102,11 @@
 }
 
 .discount-percent {
+  border: none;
+  border-radius: 8px;
   font-weight: 700;
   color: hsl(26, 100%, 55%);
-  padding: 5px;
+  padding: 5px 10px;
   background-color: hsl(25, 100%, 94%);
 }
 
@@ -116,8 +117,6 @@
   margin-top: -10px;
 }
 
-.cart-div {
-}
 .addToCart {
   border: none;
   border-radius: 10px;

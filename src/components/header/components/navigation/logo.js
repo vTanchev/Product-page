@@ -1,14 +1,12 @@
 import React from "react";
 
+import logoImg from "./assets/logo.svg";
 import "./logo.css";
 
 const Logo = () => {
   return (
     <div className="logo">
-      <a href="/">
-        {" "}
-        <h2>SNEAKERS</h2>
-      </a>
+      <img src={logoImg} alt="logo-image" />
     </div>
   );
 };
