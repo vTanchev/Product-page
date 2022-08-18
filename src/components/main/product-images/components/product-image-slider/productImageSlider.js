@@ -1,20 +1,22 @@
 import React from 'react'
+import {Images} from '../../../product-images/components/side-images/sideImages.js'
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
-import ImageMain1 from "../../../../../assets/images/image-main-1.jpg"
-import SideImages from '../side-images/sideImages'
-
-const ProductImageSlider = () => {
-    return (
-        
-        <div className='image-container'>
-            <div className='main-image'>
-            <img  src={ImageMain1} width="300" height="300"/>
-            
-            </div>
-          <SideImages/>
+class ProductImageSlider extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        items: []
+      };
+    }
+  
+    render() {
+      return (
+        <div>
+          <ImageGallery  showThumbnails={true} items={Images} />
         </div>
-        
-    )
-
-}
-export default ProductImageSlider
+      );
+    }
+  }
+  export default ProductImageSlider;
