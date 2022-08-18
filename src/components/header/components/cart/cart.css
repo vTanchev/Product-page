@@ -12,3 +12,19 @@
 .login-panel {
   margin: 0 10px;
 }
+
+.cartItems {
+  position: absolute;
+  right: 120px;
+  top: -10px;
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}

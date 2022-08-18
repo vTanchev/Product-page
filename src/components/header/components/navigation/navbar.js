@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import "./nav.css";
-import Logo from "../navigation/Logo";
+import Logo from "./Logo";
 
 const pathArray = [
   { pathName: "collections", displayName: "Collections" },

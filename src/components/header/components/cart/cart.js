@@ -26,7 +26,9 @@ const Cart = ({ itemsInCart, setItemsInCart, isPopupOpen, setIsPopupOpen }) => {
         width={40}
         style={{ cursor: "pointer" }}
       />
-      <p>{countNumberOfItems}</p>
+      {countNumberOfItems <= 0 ? null : (
+        <p className="cartItems">{countNumberOfItems}</p>
+      )}
       <LoginPanel />
     </div>
   );

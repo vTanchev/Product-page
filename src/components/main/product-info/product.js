@@ -23,9 +23,7 @@ const productDetails = {
   image: productImg,
 };
 
-const Product = ({ itemsInCart, setItemsInCart }) => {
-  const [count, setCount] = useState(0);
-
+const Product = ({ itemsInCart, setItemsInCart, count, setCount }) => {
   const priceAffterDiscount =
     productDetails.price -
     (productDetails.price * productDetails.discount) / 100;

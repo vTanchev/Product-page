@@ -8,6 +8,7 @@ import Main from "./components/main/main";
 function App() {
   const [itemsInCart, setItemsInCart] = useState([]);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -18,7 +19,13 @@ function App() {
           isPopupOpen={isPopupOpen}
           setIsPopupOpen={setIsPopupOpen}
         />
-        <ItemsInCart isOpen={isPopupOpen} itemsInCart={itemsInCart} />
+        <ItemsInCart
+          isOpen={isPopupOpen}
+          itemsInCart={itemsInCart}
+          setItemsInCart={setItemsInCart}
+          count={count}
+          setCount={setCount}
+        />
         <Routes>
           <Route path="/" element={<p>Home</p>}></Route>
           <Route path="/collections" element={<p>Collections</p>}></Route>
@@ -26,7 +33,12 @@ function App() {
           <Route
             path="/women"
             element={
-              <Main itemsInCart={itemsInCart} setItemsInCart={setItemsInCart} />
+              <Main
+                itemsInCart={itemsInCart}
+                setItemsInCart={setItemsInCart}
+                count={count}
+                setCount={setCount}
+              />
             }
           ></Route>
           <Route path="/about" element={<p>About</p>}></Route>
