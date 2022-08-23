@@ -1,0 +1,22 @@
+.small-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+    height: 100px;
+  }
+  
+  .small-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .active-img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }

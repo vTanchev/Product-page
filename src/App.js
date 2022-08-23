@@ -4,14 +4,20 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/header/header";
 import ItemsInCart from "./components/items-in-cart/ItemsInCart";
 import Main from "./components/main/main";
+import ProductImageGallery from "./components/main/product-images/ProductImageGallery";
 
 function App() {
   const [itemsInCart, setItemsInCart] = useState([]);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [count, setCount] = useState(0);
+  const [showGallery, setShowGallery] = useState(false)
 
   return (
     <div className="App">
+      <ProductImageGallery
+       showGallery={showGallery} 
+       setShowGallery={setShowGallery}
+        />
       <Router>
         <Header
           itemsInCart={itemsInCart}
@@ -26,6 +32,7 @@ function App() {
           count={count}
           setCount={setCount}
         />
+
         <Routes>
           <Route path="/" element={<p>Home</p>}></Route>
           <Route path="/collections" element={<p>Collections</p>}></Route>
@@ -38,6 +45,8 @@ function App() {
                 setItemsInCart={setItemsInCart}
                 count={count}
                 setCount={setCount}
+                showGallery={showGallery}
+                setShowGallery={setShowGallery}
               />
             }
           ></Route>
