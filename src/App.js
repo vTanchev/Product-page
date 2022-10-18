@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 
 import Header from "./components/header/header";
 import ItemsInCart from "./components/items-in-cart/ItemsInCart";
@@ -9,15 +14,15 @@ import ProductImageGallery from "./components/main/product-images/ProductImageGa
 function App() {
   const [itemsInCart, setItemsInCart] = useState([]);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [count, setCount] = useState(0);
-  const [showGallery, setShowGallery] = useState(false)
+  const [count, setCount] = useState(1);
+  const [showGallery, setShowGallery] = useState(false);
 
   return (
     <div className="App">
       <ProductImageGallery
-       showGallery={showGallery} 
-       setShowGallery={setShowGallery}
-        />
+        showGallery={showGallery}
+        setShowGallery={setShowGallery}
+      />
       <Router>
         <Header
           itemsInCart={itemsInCart}
@@ -34,7 +39,7 @@ function App() {
         />
 
         <Routes>
-          <Route path="/" element={<p>Home</p>}></Route>
+          <Route path="/" element={<Navigate to="/women" replace />}></Route>
           <Route path="/collections" element={<p>Collections</p>}></Route>
           <Route path="/men" element={<p>Men</p>}></Route>
           <Route
@@ -52,6 +57,7 @@ function App() {
           ></Route>
           <Route path="/about" element={<p>About</p>}></Route>
           <Route path="/contact" element={<p>Contact</p>}></Route>
+          <Route path="*" element={<Navigate to="/women" replace />} />
         </Routes>
       </Router>
     </div>
