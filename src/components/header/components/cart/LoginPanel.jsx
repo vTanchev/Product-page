@@ -1,6 +1,6 @@
 import React from "react";
 
-import avatar from "./cart-images/image-avatar.png";
+import avatar from "../../../../assets/images/image-avatar.png";
 
 const LoginPanel = () => {
   return (

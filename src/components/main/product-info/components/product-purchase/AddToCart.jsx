@@ -33,7 +33,10 @@ const AddToCart = ({
   };
   return (
     <div className="cart-div">
-      <button className=" btn addToCart" onClick={handleOnClick}>
+      <button
+        className=" btn addToCart md:mx-12 md:w-[80%] w-full"
+        onClick={handleOnClick}
+      >
         <FontAwesomeIcon icon={faCartShopping} className="icon" />
         Add to cart
       </button>

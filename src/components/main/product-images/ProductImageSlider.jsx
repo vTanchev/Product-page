@@ -36,7 +36,7 @@ const ProductImageSlider = ({ showGallery, setShowGallery }) => {
   const [activeImg, setActiveImg] = useState(productImage1L);
 
   return (
-    <div>
+    <div className="flex flex-col ">
       <img
         src={activeImg}
         alt="activeImg"
@@ -59,16 +59,3 @@ const ProductImageSlider = ({ showGallery, setShowGallery }) => {
 };
 
 export default ProductImageSlider;
-
-
-
-
-
-
-
-
-
-
-
-
-

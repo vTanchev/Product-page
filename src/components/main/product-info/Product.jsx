@@ -1,13 +1,13 @@
 import React from "react";
 
-import Type from "./components/product-details/type";
-import Title from "./components/product-details/title";
-import Description from "./components/product-details/description";
+import Type from "./components/product-details/Type";
+import Title from "./components/product-details/Title";
+import Description from "./components/product-details/Description";
 import PriceBeforeDiscount from "./components/product-details/PriceBeforeDiscount";
 import RealPrice from "./components/product-discount/RealPrice";
-import ProductPricePercent from "./components/product-discount/productPricePercent";
-import AddToCart from "./components/product-purchase/addToCart";
-import ItemsToBuy from "./components/items-to-buy/itemsToBuy";
+import ProductPricePercent from "./components/product-discount/ProductPricePercent";
+import AddToCart from "./components/product-purchase/AddToCart";
+import ItemsToBuy from "./components/items-to-buy/ItemsToBuy";
 
 import productImg from "./components/items-to-buy/assets/product-image.jpg";
 
@@ -34,14 +34,14 @@ const Product = ({ itemsInCart, setItemsInCart, count, setCount }) => {
       : productDetails.price.toFixed(2);
 
   return (
-    <div className="product-info">
+    <div className="product-info md:w-[400px]">
       <div className="product-menu">
-        <div className="product">
+        <div className="product ">
           <Type type={productDetails.type} />
           <Title name={productDetails.name} />
           <Description description={productDetails.description} />
           <div className="product-prices">
-            <div className="discount">
+            <div className="discount md:my-2">
               <RealPrice realPrice={realPrice} />
               {productDetails.discount > 0 ? (
                 <ProductPricePercent discount={productDetails.discount} />
@@ -51,7 +51,7 @@ const Product = ({ itemsInCart, setItemsInCart, count, setCount }) => {
               <PriceBeforeDiscount price={productDetails.price} />
             ) : null}
           </div>
-          <div className="add-to-cart">
+          <div className="add-to-cart flex md:flex-row flex-col my-4">
             <ItemsToBuy count={count} setCount={setCount} />
             <AddToCart
               itemsInCart={itemsInCart}

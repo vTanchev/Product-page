@@ -1,6 +1,4 @@
 .main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
 }

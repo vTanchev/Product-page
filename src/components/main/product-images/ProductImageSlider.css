@@ -1,22 +1,37 @@
 .small-images {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 350px;
-    height: 100px;
-  }
-  
-  .small-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  height: 100px;
+}
+
+.small-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.active-img {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
   .active-img {
-    width: 350px;
-    height: 350px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    width: 100%;
     cursor: pointer;
   }
+
+  .small-img {
+    visibility: hidden;
+  }
+
+  .active-img {
+    border-radius: 0;
+  }
+}

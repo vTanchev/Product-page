@@ -5,10 +5,11 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
+import MobileNav from "./components/header/components/navigation/MobileNav";
 
-import Header from "./components/header/header";
+import Header from "./components/header/Header";
 import ItemsInCart from "./components/items-in-cart/ItemsInCart";
-import Main from "./components/main/main";
+import Main from "./components/main/Main";
 import ProductImageGallery from "./components/main/product-images/ProductImageGallery";
 
 function App() {

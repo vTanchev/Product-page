@@ -1,5 +1,4 @@
 .cart {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -7,6 +6,7 @@
 
 .img-cart {
   margin: 0 10px;
+  height: 40px;
 }
 
 .login-panel {
@@ -15,11 +15,12 @@
 
 .cartItems {
   position: absolute;
-  right: 260px;
+  right: 210px;
   top: 10px;
   background-color: hsl(26, 100%, 55%);
   border: none;
   border-radius: 20px;
+  align-items: center;
   padding: 5px;
   width: 30px;
   height: 20px;
@@ -27,4 +28,23 @@
   color: #fff;
   font-size: 12px;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .cartItems {
+    position: absolute;
+    right: 70px;
+    top: 10px;
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    padding: 5px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+  }
 }

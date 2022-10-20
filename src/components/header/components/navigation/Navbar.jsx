@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import "./nav.css";
 import Logo from "./Logo";
 
-const pathArray = [
+export const pathArray = [
   { pathName: "collections", displayName: "Collections" },
   { pathName: "men", displayName: "Men" },
   { pathName: "women", displayName: "Women" },
@@ -18,7 +18,7 @@ const activeStyle = {
 
 const Navbar = () => {
   return (
-    <div className="nav">
+    <div className="nav hidden">
       <Logo />
       <nav>
         {pathArray.map((link) => (
@@ -34,4 +34,5 @@ const Navbar = () => {
     </div>
   );
 };
+
 export default Navbar;

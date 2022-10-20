@@ -2,6 +2,7 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
+
 import "./itemsInCart.css";
 
 const ItemsInCart = ({
@@ -16,43 +17,19 @@ const ItemsInCart = ({
     setCount(0);
   };
 
+  const showOn = isOpen ? "cart-show" : "cart-close";
+
   if (itemsInCart.length === 0) {
     return (
-      <div
-        style={{
-          display: isOpen ? "flex" : "none",
-          flexDirection: "column",
-          position: "absolute",
-          top: 70,
-          right: 140,
-          zIndex: 20,
-          width: "400px",
-          height: "250px",
-          backgroundColor: `white`,
-          boxShadow: `8px 7px 24px -3px rgba(0,0,0,0.62)`,
-        }}
-      >
+      <div className={showOn}>
         <h3 className="cart-title">Cart</h3>
         <p className="empty-cart">Your cart is empty.</p>
       </div>
     );
   } else {
-    return itemsInCart.map((item) => {
+    return itemsInCart.map((item, index) => {
       return (
-        <div
-          style={{
-            display: isOpen ? "flex" : "none",
-            flexDirection: "column",
-            position: "absolute",
-            top: 70,
-            right: 140,
-            zIndex: 20,
-            width: "400px",
-            height: "250px",
-            backgroundColor: `white`,
-            boxShadow: `8px 7px 24px -3px rgba(0,0,0,0.62)`,
-          }}
-        >
+        <div key={index} className={showOn}>
           <h3 className="cart-title">Cart</h3>
           <div className="container">
             <div className="img-div">

@@ -2,11 +2,10 @@ import React from "react";
 
 import "./cart.css";
 
-import LoginPanel from "./loginPanel";
-import shoppingCart from "./cart-images/shopping-cart.png";
-// import { faClipboardList } from "@fortawesome/free-solid-svg-icons";
+import LoginPanel from "./LoginPanel";
+import shoppingCart from "../../../../assets/images/shopping-cart.png";
 
-const Cart = ({ itemsInCart, setItemsInCart, isPopupOpen, setIsPopupOpen }) => {
+const Cart = ({ itemsInCart, isPopupOpen, setIsPopupOpen }) => {
   const handleCart = () => {
     setIsPopupOpen(!isPopupOpen);
   };
@@ -16,14 +15,12 @@ const Cart = ({ itemsInCart, setItemsInCart, isPopupOpen, setIsPopupOpen }) => {
     .reduce((acc, price) => acc + price, 0);
 
   return (
-    <div className="cart">
+    <div className="cart my-auto">
       <img
         className="img-cart"
         src={shoppingCart}
         alt="Shopping cart"
         onClick={handleCart}
-        height={40}
-        width={40}
         style={{ cursor: "pointer" }}
       />
       {countNumberOfItems <= 0 ? null : (

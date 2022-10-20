@@ -1,5 +1,41 @@
 @import url(https://fonts.google.com/specimen/Kumbh+Sans);
 
+.cart-show {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 70px;
+  right: 70px;
+  z-index: 5;
+  width: 400px;
+  height: 250px;
+  background-color: #fff;
+  box-shadow: 8px 7px 24px -3px rgba(0, 0, 0, 0.62);
+}
+
+.cart-close {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .cart-show {
+    top: 100px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 8px 7px 24px -3px rgba(0, 0, 0, 0.62);
+  }
+
+  .cart-close {
+    display: none;
+  }
+}
+
 .empty-cart {
   align-self: center;
   text-align: center;

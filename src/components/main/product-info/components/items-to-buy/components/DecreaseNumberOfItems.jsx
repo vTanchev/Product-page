@@ -8,7 +8,7 @@ const DecreaseNumberOfItems = ({ count, setCount }) => {
       <button
         className="decrease btn"
         onClick={() => setCount(count - 1)}
-        disabled={count <= 0}
+        disabled={count <= 1}
       >
         <img src={decrease} alt="minus" />
       </button>
