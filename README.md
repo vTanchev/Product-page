@@ -21,7 +21,7 @@ Women: Page where you can view unique women's sneakers along with information ab
 
 ## Live Demo
 
-[Live Demo Link](https://e-commerce-shop-sneaker.netlify.app/women)
+[Live Demo Link](https://e-commerce-shop-sneaker.netlify.app)
 
 ## Getting Started
 
@@ -78,7 +78,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- https://e-commerce-shop-sneaker.netlify.app/women
+- https://e-commerce-shop-sneaker.netlify.app
 
 ## �� License
 
