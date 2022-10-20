@@ -15,11 +15,13 @@ Women: Page where you can view unique women's sneakers along with information ab
 - JavaScript
 - React.js
 - react-router-dom
+- styled-components
+- tailwind-css
 - react-icons
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://e-commerce-shop-sneaker.netlify.app/women)
 
 ## Getting Started
 
@@ -76,7 +78,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- https:
+- https://e-commerce-shop-sneaker.netlify.app/women
 
 ## �� License
 
